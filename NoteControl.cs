@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace AccountingSystemWinForms
 {
-    public partial class SignUpControl : UserControl
+    public partial class NoteControl : UserControl
     {
-        public SignUpControl()
+        public NoteControl()
         {
             InitializeComponent();
         }
-        //enable window buffering
+        //enable window buffering (para ma smooth ang pag render)
         protected override CreateParams CreateParams
         {
             get
@@ -26,13 +26,17 @@ namespace AccountingSystemWinForms
                 return cp;
             }
         }
-        private void btnBackToLogin_Click(object sender, EventArgs e)
+        private void btnProcceed_Click(object sender, EventArgs e)
         {
-            WelcomeForm.welcomeForm.loginControl.Show();
-            WelcomeForm.welcomeForm.signUpControl.Hide();
+            this.Hide();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
         {
 
         }

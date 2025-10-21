@@ -7,18 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Krypton.Toolkit;
 
 namespace AccountingSystemWinForms
 {
-    public partial class LoginControl : UserControl
+    public partial class DialogAddTransactions : Form
     {
-        public LoginControl()
+        public DialogAddTransactions()
         {
             InitializeComponent();
-
+            UiDesign.ApplyShadow(this);
         }
-        //enable window buffering  (para ma smooth ang pag render)
+        //enable window buffering (para ma smooth ang pag render)
         protected override CreateParams CreateParams
         {
             get
@@ -28,28 +27,34 @@ namespace AccountingSystemWinForms
                 return cp;
             }
         }
-        private void kryptonLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
-            Main mainForm = new Main();
-            mainForm.Show();
 
-            WelcomeForm.welcomeForm.Hide();
         }
 
-        private void btnSignUp_Click(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
-            WelcomeForm.welcomeForm.signUpControl.Show();
-            WelcomeForm.welcomeForm.loginControl.Hide();
+
+        }
+
+        private void btnClearForm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClearForm_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
